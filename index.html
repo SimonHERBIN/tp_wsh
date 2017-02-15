@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>We Save Homeless</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+        //<!--
+                function change_onglet(name)
+                {
+                        document.getElementById('onglet_'+anc_onglet).className = 'onglet_0 onglet';
+                        document.getElementById('onglet_'+name).className = 'onglet_1 onglet';
+                        document.getElementById('contenu_onglet_'+anc_onglet).style.display = 'none';
+                        document.getElementById('contenu_onglet_'+name).style.display = 'block';
+                        anc_onglet = name;
+                }
+        //-->
+        </script>
+</head>
+<body>
+<div class="systeme_onglets">
+        <div class="onglets">
+            <span class="onglet_0 onglet" id="onglet_quoi" onclick="javascript:change_onglet('quoi');">Présentation</span>
+            <span class="onglet_0 onglet" id="onglet_qui" onclick="javascript:change_onglet('qui');">Démo</span>
+            <span class="onglet_0 onglet" id="onglet_pourquoi" onclick="javascript:change_onglet('pourquoi');">A propos</span>
+            <span class="onglet_0 onglet" id="onglet_pourquoi" onclick="javascript:change_onglet('pourquoi');">Contact</span>
+
+        </div>
+        <div class="contenu_onglets">
+            <div class="contenu_onglet" id="contenu_onglet_quoi">
+                <h1>We Save Homeless</h1>
+                <p>We Save Homeless : une application française veut aider les sans-abris.</p>
+                <p>Le principe de We Save Homeless est à ce titre simple : il permet à des volontaires de proposer aux sans-abris de s’enregistrer sur l’application s’ils souhaitent être trouvés et rencontrés par des associations ou des services sociaux.</p> 
+                <p>Une fois son profil créé sur l’application, les informations personnelles du sans abri sont stockées sur une carte NFC qu’il possède. La base de données recense simplement un point de rencontre.</p>
+
+                <div class="video-container">  
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/ocXWcFzCn0o" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+
+
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_qui">
+                <h1>Application :</h1>
+
+				<p>Le coeur de l’application est d’aider les associations à coordonner leurs actions et leur prise en charge des personnes à la rue. De ce fait, les objectifs sont de déterminer les besoins d’une personne démunie, de permettre une meilleure communication entre les associations et de sensibiliser le grand public sur les conditions des personnes sans domicile fixe tout en leur offrant la possibilité de devenir le lien entre eux et la société.</p>
+
+				<p>Le principe est simple: une association va à la rencontre d'un sans-abri et lui demande s'il veut s'inscrire sur l'application "We Save Homeless".</p>
+
+				<p>S'il accepte, ses besoins et un point de rencontre sont enregistrés dans notre application et ses informations personnelles sur une petite carte qui lui est donnée.</p>
+
+				<p>Ainsi, les associations pouvant répondre aux besoins demandés par le sans-abri saurons où allez grâce à une carte. Toutefois, le sans-abri gardera le contrôle de ses informations personnelles. En plus de cela, il peut choisir d'être oublié juste en cassant sa carte.</p>
+
+				<p>Aussi, en scannant sa carte, les associations pourront mettre à jour ses besoins. Si besoin, We Save Homeless préviendra les autres associations concernées.</p>
+
+				<p>Plus de perte de temps, place aux maraudes efficaces !</p>
+
+				<img id="img" src="https://wesavehomeless.org/image/en/Needs.png" width="850" height="475" alt="wesavehomeless_example" 
+					 title="Un aperçu de l'interface">
+			</div>
+            
+            <div class="contenu_onglet" id="contenu_onglet_pourquoi">
+                <h1>kkkk</h1>
+                
+            </div>
+        
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<!--
+                var anc_onglet = 'quoi';
+                change_onglet(anc_onglet);
+        //-->
+        </script>		
+
+
+
+	
+
+</body>
+</html>
