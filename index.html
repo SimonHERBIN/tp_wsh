@@ -2,8 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
 	<title>We Save Homeless</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="wsh.png">
 	<script type="text/javascript">
         //<!--
                 function change_onglet(name)
@@ -18,32 +20,36 @@
         </script>
 </head>
 <body>
-<div class="systeme_onglets">
+        <header style="text-align: center" >
+        <img src="wsh.png" class="banner" alt="banner" >
+
+        </header>
+    <div class="systeme_onglets">
         <div class="onglets">
-            <span class="onglet_0 onglet" id="onglet_quoi" onclick="javascript:change_onglet('quoi');">Présentation</span>
-            <span class="onglet_0 onglet" id="onglet_qui" onclick="javascript:change_onglet('qui');">Démo</span>
-            <span class="onglet_0 onglet" id="onglet_pourquoi" onclick="javascript:change_onglet('pourquoi');">A propos</span>
-            <span class="onglet_0 onglet" id="onglet_pourquoi" onclick="javascript:change_onglet('pourquoi');">Contact</span>
+            <span class="onglet_0 onglet" id="onglet_présentation" onclick="javascript:change_onglet('présentation');">Présentation</span>
+            <span class="onglet_0 onglet" id="onglet_démo" onclick="javascript:change_onglet('démo');">Démo</span>
+            <span class="onglet_0 onglet" id="onglet_a propos" onclick="javascript:change_onglet('a propos');">À propos</span>
+            <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
 
         </div>
         <div class="contenu_onglets">
-            <div class="contenu_onglet" id="contenu_onglet_quoi">
+            <div class="contenu_onglet" id="contenu_onglet_présentation">
                 <h1>We Save Homeless</h1>
                 <p>We Save Homeless : une application française veut aider les sans-abris.</p>
                 <p>Le principe de We Save Homeless est à ce titre simple : il permet à des volontaires de proposer aux sans-abris de s’enregistrer sur l’application s’ils souhaitent être trouvés et rencontrés par des associations ou des services sociaux.</p> 
                 <p>Une fois son profil créé sur l’application, les informations personnelles du sans abri sont stockées sur une carte NFC qu’il possède. La base de données recense simplement un point de rencontre.</p>
 
                 <div class="video-container">  
-                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/ocXWcFzCn0o" frameborder="0" allowfullscreen></iframe>
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/ocXWcFzCn0o" frameborder="0" allowfullscreen></iframe>
 				</div>
 
 
 
             </div>
-            <div class="contenu_onglet" id="contenu_onglet_qui">
+            <div class="contenu_onglet" id="contenu_onglet_démo">
                 <h1>Application :</h1>
 
-				<p>Le coeur de l’application est d’aider les associations à coordonner leurs actions et leur prise en charge des personnes à la rue. De ce fait, les objectifs sont de déterminer les besoins d’une personne démunie, de permettre une meilleure communication entre les associations et de sensibiliser le grand public sur les conditions des personnes sans domicile fixe tout en leur offrant la possibilité de devenir le lien entre eux et la société.</p>
+				<p>Le coeur de l’application est d’aider les associations à coordonner leurs actions et leur prise en charge des personnes à la rue. <br> De ce fait, les objectifs sont de déterminer les besoins d’une personne démunie, de permettre une meilleure communication entre les associations et de sensibiliser le grand public sur les conditions des personnes sans domicile fixe tout en leur offrant la possibilité de devenir le lien entre eux et la société.</p>
 
 				<p>Le principe est simple: une association va à la rencontre d'un sans-abri et lui demande s'il veut s'inscrire sur l'application "We Save Homeless".</p>
 
@@ -55,12 +61,35 @@
 
 				<p>Plus de perte de temps, place aux maraudes efficaces !</p>
 
-				<img id="img" src="https://wesavehomeless.org/image/en/Needs.png" width="850" height="475" alt="wesavehomeless_example" 
+				<img class="img" src="https://wesavehomeless.org/image/en/Needs.png" width="850" height="475" alt="wesavehomeless_example" 
 					 title="Un aperçu de l'interface">
+                <img class="img" src="https://wesavehomeless.org/image/en/Map.png" alt="wesavehomeless_example" title="Un aperçu de l'interface">
 			</div>
             
-            <div class="contenu_onglet" id="contenu_onglet_pourquoi">
-                <h1>kkkk</h1>
+            <div class="contenu_onglet" id="contenu_onglet_a propos">
+                <h1>Les créateurs</h1>
+
+                <p>Deux étudiants lillois, Raphael Thiebault et Antoine Zanardi (Epitech promo 2019) s’impliquent dès le départ dans le projet, sur la partie technique, encouragés par la direction de l’école et encadrés par l’Epitech Innovation Hub, qui soutient les innovations sociétales et technologiques au service du progrès. </p>
+                <p>Le web design est quant à lui réalisé par des étudiants lillois d’e-artsup, école également membre de IONIS Education Group. Trois interfaces sont actuellement en développement pour le lancement d’une phase test au cours du mois de février, sur le territoire français, dans un premier temps avec un nombre limité d’associations.</p>     
+                
+            </div>
+
+            <div class="contenu_onglet" id="contenu_onglet_contact">
+                <h1>Contactez-nous</h1>
+
+                <form> 
+            <h3>Nom :</h3>
+                <input  type="text" name="Nom" placeholder="Entrez votre nom"> <br>
+            <h3> E-mail :</h3>
+                <input  type="Email" name="Email" placeholder="Entrez votre adresse mail">
+            <h3>Téléphone :</h3>
+                <input  type="tel" name="Téléphone" placeholder="Entrez votre numéro de téléphone">
+            <h3>Commentaires :</h3>
+                <textarea name="Commentaires" rows="5" cols="30"></textarea> <br>
+
+                
+                <p><input type="submit" name="Envoyer"></p>
+                </form>
                 
             </div>
         
@@ -68,14 +97,10 @@
     </div>
     <script type="text/javascript">
         //<!--
-                var anc_onglet = 'quoi';
+                var anc_onglet = 'présentation';
                 change_onglet(anc_onglet);
         //-->
         </script>		
-
-
-
-	
 
 </body>
 </html>
