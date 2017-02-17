@@ -2,32 +2,32 @@
 
         display:inline-block;
         margin-left:3px;
-        margin-right:3px;
+        margin-right:-7px;
         padding:3px;
         border:1px solid black;
         cursor:pointer;
-
         }
 
 .onglet_0 {
-        background:#90caf9;
+        background-color:#00C9D9;
         border-bottom:1px solid black;
-        
+        background: white;
         }
         
 .onglet_1 {
-        background:#90caf9;
+        background-color:#00C9D9;
         border-bottom:0px solid black;
         padding-bottom:4px;
 
         }
 
 .contenu_onglet {
-        background-color:#90caf9;
         border:1px solid black;
         margin-top:-1px;
         padding:5px;
         display:none;
+        background-color: #00C9D9;
+        float: l;
 
         }
 
@@ -42,12 +42,18 @@ ul {
 h1 {
         margin:0px;
         padding:0px;
+        text-align: center;
 
        }
 
-#img {
+p {
+    text-align: justify;
+}
+
+.img {
         max-width: 100%;
-        height: auto;
+        height: 500px;
+        width: 500px;
 }
 
 .video-container {
@@ -56,6 +62,7 @@ h1 {
         padding-top: 30px;
         height: 0;
         overflow: hidden;
+        max-width: 100%;
 }
 
 .video-container iframe,  
@@ -64,12 +71,24 @@ h1 {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 960px;
+        max-width: 100%;
         height: 100%;
+        
 }
 
+
 body {
-        background-color: #e3f2fd;
+        background-color: white;
+        font-family: Arial, sans-serif;
+
 }
+
+.banner {
+    width: 25%;
+    height: 10%;
+    max-width: 100%;
+}
+
 
 
